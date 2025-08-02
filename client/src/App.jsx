@@ -4,7 +4,7 @@ import Home from './pages/Home.jsx'
 import ProjectsPage from './pages/Projects';
 import ArticlesPage from './pages/Articles';
 import CodesPage from './pages/Coding';
-import AdminPage from './pages/Admin';
+import AdminPage from './pages/Admin.jsx';
 
 
 

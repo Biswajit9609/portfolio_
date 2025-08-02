@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   getAllProjects, addProject, updateProject, deleteProject,
   getAllArticles, addArticle, updateArticle, deleteArticle,
@@ -6,14 +6,14 @@ import {
 } from '../services/api.js';
 
 
-import AdminStats from '../components/admin/AdminStats';
-import AdminModal from '../components/admin/AdminModal';
-import AdminProjectList from '../components/admin/AdminProjectList';
-import AdminArticleList from '../components/admin/AdminArticleList';
-import AdminCodeList from '../components/admin/AdminCodeList';
-import ArticleForm from '../components/admin/ArticleForm';
-import ProjectForm from '../components/admin/ProjectForm';
-import CodeForm from '../components/admin/CodeForm';
+import AdminStats from '../components/admin/AdminStats.jsx';
+import AdminModal from '../components/admin/AdminModal.jsx';
+import AdminProjectList from '../components/admin/AdminProjectList.jsx';
+import AdminArticleList from '../components/admin/AdminArticleList.jsx';
+import AdminCodeList from '../components/admin/AdminCodeList.jsx';
+import ArticleForm from '../components/admin/ArticleForm.jsx';
+import ProjectForm from '../components/admin/ProjectForm.jsx';
+import CodeForm from '../components/admin/CodeForm.jsx';
 
 const AdminPage = () => {
 
