@@ -15,9 +15,9 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const [proj, art, cod] = await Promise.all([
-          axios.get('http://localhost:4000/api/projects'),
-          axios.get('http://localhost:4000/api/articles'),
-          axios.get('http://localhost:4000/api/codes')
+          axios.get('https://portfolio-pl6k.onrender.com/api/projects'),
+          axios.get('https://portfolio-pl6k.onrender.com/api/articles'),
+          axios.get('https://portfolio-pl6k.onrender.com/api/codes')
         ])
         setProjects(proj.data.filter(p => p.featured))
         setArticles(art.data.filter(a => a.featured))
@@ -38,7 +38,7 @@ const Home = () => {
           <h2 className="text-4xl font-extrabold mb-3">Hi, I’m Biswajit 👋</h2>
           <p className="text-xl text-blue-500 font-medium mb-4">Full Stack Developer | IoT Enthusiast</p>
           <p className="text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
-            I build full-stack web apps and embedded systems. Currently working on smart solutions like MedAlert and Sh-xi.
+            I build full-stack web apps and embedded systems. Currently working on smart solutions like MedAlert and Aid-verify.
             I'm passionate about blending software with hardware to solve real-world problems.
           </p>
         </div>
