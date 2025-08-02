@@ -3,7 +3,7 @@ import {
   getAllProjects, addProject, updateProject, deleteProject,
   getAllArticles, addArticle, updateArticle, deleteArticle,
   getAllCodes, addCode, updateCode, deleteCode
-} from '../services/api';
+} from '../services/api.js';
 
 
 import AdminStats from '../components/admin/AdminStats';
