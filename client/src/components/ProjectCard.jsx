@@ -8,7 +8,7 @@ const ProjectCard = ({ title, description, image, technologies, githubLink, proj
         
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies?.map((tech, index) => (
-            <span key={index} className="bg-gray-700 text-cyan-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+            <span key={index} className="bg-gray-700 text-cyan-400 text-xs font-semibold px-5 py-2 rounded-full">
               {tech}
             </span>
           ))}

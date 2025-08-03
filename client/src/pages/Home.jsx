@@ -30,7 +30,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main className="text-gray-800 dark:text-white bg-gray-50 dark:bg-gradient-to-br dark:from-[#0f172a] dark:to-[#1e1b4b] min-h-screen">
+    <main className="text-gray-800 dark:text-white bg-gray-50 dark:bg-slate-900 dark:from-[#0f172a] dark:to-[#1e1b4b] min-h-screen">
       {/* Hero */}
       <section className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
         <img src={image} alt="Profile" className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-blue-600" />
@@ -56,10 +56,10 @@ const Home = () => {
                 <p className="text-sm text-gray-300 mb-4">{p.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {p?.technologies?.map((tech, i) => (
-                    <span key={i} className="bg-purple-700 px-2 py-1 rounded-full text-xs">{tech}</span>
+                    <span key={i} className="bg-purple-700 px-5 py-2 rounded-full text-xs">{tech}</span>
                   ))}
                 </div>
-                <div className="flex items-center gap-4 text-sm">
+                <div className="flex items-end gap-4 text-sm">
                   <a href={p.projectLink} target="_blank" className="flex items-center gap-1 text-blue-400 hover:underline">
                     <ExternalLink size={16} /> Demo
                   </a>
