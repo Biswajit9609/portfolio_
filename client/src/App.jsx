@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import Home from './pages/Home.jsx'
 import ProjectsPage from './pages/Projects';
 import ArticlesPage from './pages/Articles';
-import CodesPage from './pages/Coding';
+import AchievementPage from './pages/Achievement';
 import AdminPage from './pages/Admin.jsx';
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -15,7 +15,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
       <nav className="hidden sm:flex bg-gray-800/30 backdrop-blur-lg fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-gray-700 px-6 py-2">
         <div className="flex space-x-4">
           <NavLink to="/" className={({ isActive }) => `${linkStyle} ${isActive ? activeLinkStyle : ''}`}>Home</NavLink>
@@ -25,7 +24,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Navbar */}
       <nav className="sm:hidden fixed top-4 left-4 right-4 z-50 bg-gray-800/30 backdrop-blur-lg rounded-xl border border-gray-700 px-4 py-2">
         <div className="flex justify-between items-center">
           <div />
@@ -56,7 +54,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/articles" element={<ArticlesPage />} />
-          <Route path="/coding-achievements" element={<CodesPage />} />
+          <Route path="/coding-achievements" element={<AchievementPage />} />
           
           <Route path="/admin" element={<AdminPage />} />
 
